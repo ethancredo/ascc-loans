@@ -25,6 +25,7 @@
         <?php include_once "includes/main-menu.php"; ?>
 
         <div class="content">
+            
             <div class="card">
                 <h1>Loan Applications</h1>
                 <p>
