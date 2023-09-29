@@ -1,0 +1,343 @@
+body {
+    font-family: "Arial";
+    margin: 0;
+    background-color: rgb(240, 240, 240);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 5px 10px;
+    background-color: white;
+}
+
+.footer {
+    font-size: 14px;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.main-icon img {
+    width: 80px;
+    padding: 10px;
+    float: left;
+}
+
+.content {
+    padding: 10px;
+    /* width: 900px; */
+    margin: auto;
+    background-color: white;
+    min-height: 740px;
+}
+
+.company-name {
+    font-size: 20px;
+    float: left;
+    vertical-align: middle;
+    padding: 16px 5px;
+    font-family: "Lato";
+}
+
+.client-pill {
+    padding: 14px 25px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+a.overflow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+/* Client Menu Style Start */
+
+.client-menu-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.client-menu-column {
+    flex: 50%;
+    max-width: 45%;
+    margin: auto;
+}
+
+.client-menu-container {
+    position: relative;
+    height: 240px;
+    margin-top: 30px;
+}
+.client-menu-container > div {
+    position: relative;
+    height: 240px;
+    border-radius: 25px;
+    transition: .2s ease-in-out;
+    background-color: rgb(201, 201, 201);
+}
+.client-menu-container:hover > div {
+    filter: blur(1px);
+}
+.client-menu-container > a {
+    position: absolute;
+    top: 0;
+    display: block;
+    color: #ffffff;
+    font-weight: bold;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: .2s ease-in-out;
+    line-height: 240px;
+    margin:0;
+    text-decoration: none;
+    font-size: 32px;
+    text-shadow: rgb(95, 95, 95) 1px 1px 3px;
+}
+.client-menu-container:hover > a {
+    color: red;
+}
+
+.client-menu-11 > div {
+    position: relative;
+    background-image: url("../image/apply_loan.jpg");
+    background-size: cover;
+    background-position-y: 10%;
+}
+.client-menu-12 > div {
+    background-image: url("../image/loan_application.jpg");
+    background-size: cover;
+    background-position-y: 10%;
+}
+.client-menu-13 > div {
+    background-image: url("../image/account_inquiry.jpg");
+    background-size: cover;
+    background-position-y: 20%;
+}
+.client-menu-21 > div {
+    background-image: url("../image/my_inquiries.jpg");
+    background-size: cover;
+    background-position-y: 80%;
+}
+.client-menu-profile > div {
+    background-image: url("../image/profile1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}.client-menu-logout > div {
+    background-image: url("../image/logout.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (max-width: 880px) {
+    .client-menu-column {
+        flex: 100%;
+        max-width: 80%;
+    }
+    .client-menu-column > div {
+        line-height: 200px;        
+    }
+    .client-menu-column a {
+        font-size: 30px;
+    }
+}
+
+/* Client Menu Style End */
+
+.card {
+    background-color: #5f609c;
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+input[type=number] {
+    appearance: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    outline: none;
+}
+
+.form {
+    padding: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.form input[type=text], .form select, .form input[type=email], .form input[type=password], .form input[type=date], .form input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+.form input[type=text]:focus, .form select:focus, .form input[type=email]:focus, .form input[type=date]:focus {
+    background-color: #ddd;
+}
+
+.button-full {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.button-full:hover {
+    background-color: #0bda8e;
+}
+
+.danger-button {
+    background-color: #cc2323;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    text-align: center;
+}
+.danger-button:hover {
+    background-color: red;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+.success-message {
+    color: green;
+    text-align: center;
+}
+
+.tables {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 11pt;
+    overflow-x: auto;
+}
+
+.tables td, .tables th {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.tables tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tables tr:hover {
+    background: #ddd;
+}
+
+.tables th {
+    text-align: left;
+    background-color: rgb(255, 182, 182);
+}
+
+.search-form {
+    float: right;
+}
+
+.search-form input[type="text"]{
+    font-size: 12pt;
+    padding: 4px;
+    width: 250px;
+}
+
+.search-form input[type="date"], .search-form button {
+    font-size: 11pt;
+    padding: 4px;
+}
+
+.search-form select {
+    font-size: 11pt;
+    padding: 5px;
+}
+
+#pagination_menu {
+    text-align: center;
+    font-weight: 500;
+}
+
+#pagination_menu td {
+    padding: 15px;
+}
+
+#pagination_menu a, b {
+    color: black;
+    padding: 8px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border-radius: 8px;
+}
+
+#pagination_menu b {
+    background-color: #2EE59D;
+    color: white;
+}
+
+.yellow {
+    background-color: yellow;
+}
+.red {
+    background-color: red;
+    color: white;
+}
+.green {
+    background-color: green;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .company-name {
+        font-size: 15px;
+        padding: 20px 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .company-name {
+        font-size: 12px;
+        padding: 20px 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .company-name {
+        font-size: 10px;
+        padding: 20px 5px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        width: 100%;
+    }
+    .form {
+        width: 100%;
+    }
+}
